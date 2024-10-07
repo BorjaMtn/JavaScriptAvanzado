@@ -17,11 +17,11 @@
               <a href="./" class="logo">JavaScriptAvanzado</a>
           </div>
           <ul>
-              <li><a href="./index.html" class="active">Inicio</a></li>
-              <li><a href="./vistas/presupuesto.html">Presupuesto</a></li>
-              <li><a href="./vistas/galeria.html">Galería</a></li>
-              <li><a href="./vistas/contacto.html">Contacto</a></li>
-          </ul>
+            <li><a href="/JavaScriptAvanzado/" class="active">Inicio</a></li>
+            <li><a href="/JavaScriptAvanzado/vistas/presupuesto.html">Presupuesto</a></li>
+            <li><a href="/JavaScriptAvanzado/vistas/galeria.html">Galería</a></li>
+            <li><a href="/JavaScriptAvanzado/vistas/contacto.html">Contacto</a></li>
+          </ul>          
       </nav>
   </header>
 
@@ -100,6 +100,13 @@
       <script src="/js/noticias.js"></script>
       <script src="/js/testimonios.js"></script>
       <script src="/js/active.js"></script>
+      <script>
+        // Si la URL actual incluye 'index.html', redirige a la raíz sin 'index.html'
+        if (window.location.pathname.endsWith('index.html')) {
+          window.location.href = window.location.origin + '/JavaScriptAvanzado/';
+        }
+      </script>
+      
 
 </body>
 </html>
