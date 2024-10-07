@@ -1,0 +1,19 @@
+[
+    {
+        "titulo": "Noticia 1",
+        "contenido": "Esta es la descripción de la noticia 1.",
+        "fecha": "2024-01-01"
+        
+    },
+    {
+        "titulo": "Noticia 2",
+        "contenido": "Esta es la descripción de la noticia 2.",
+        "fecha": "2024-01-02"
+    },
+    {
+        "titulo": "Noticia 3",
+        "contenido": "Esta es la descripción de la noticia 3.",
+        "fecha": "2024-01-03"
+
+    }
+]

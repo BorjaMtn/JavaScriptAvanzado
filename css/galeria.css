@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0056b3; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; 
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+    background-color: #004494; 
+    transform: translateY(-2px); 
+}
+
+.navbar a.active {
+    background-color: #003366; 
+    font-weight: bold; 
+}
+
+/* Para evitar que el contenido quede oculto detrás de la barra de navegación */
+main {
+    padding-top: 80px; 
+    text-align: center; 
+    color: #333; 
+}
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .galeria a {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .galeria a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .galeria img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            transition: opacity 0.3s;
+        }
+
+        .galeria img:hover {
+            opacity: 0.9; 
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer .text-light {
+            transition: color 0.3s;
+        }
+        
+        footer .text-light:hover {
+            color: #ccc; 
+        }
+        
+        footer h5 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        

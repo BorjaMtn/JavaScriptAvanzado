@@ -1,0 +1,14 @@
+[
+    {
+        "cliente": "Cliente Satisfecho",
+        "testimonio": "La experiencia con esta empresa ha sido excepcional. Su atención al cliente es inigualable!"
+    },
+    {
+        "cliente": "Otro Cliente Satisfecho",
+        "testimonio": "Un servicio de alta calidad y un equipo muy profesional. Recomiendo encarecidamente!"
+    },
+    {
+        "cliente": "Cliente Feliz",
+        "testimonio": "El equipo fue muy amable y siempre dispuesto a ayudar. ¡Definitivamente volveré a utilizar sus servicios!"
+    }
+]
