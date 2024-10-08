@@ -1,4 +1,4 @@
-fetch('../data/noticias.json')
+fetch('https://borjamtn.github.io/JavaScriptAvanzado/data/noticias.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al cargar las noticias');

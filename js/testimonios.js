@@ -1,4 +1,4 @@
-fetch('../data/testimonios.json')
+fetch('https://borjamtn.github.io/JavaScriptAvanzado/data/testimonios.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al cargar los testimonios');
