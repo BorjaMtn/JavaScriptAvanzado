@@ -1,5 +1,6 @@
-fetch('https://raw.githubusercontent.com/borjamtn/JavaScriptAvanzado/main/data/noticias.json')
-
+fetch('https://raw.githubusercontent.com/borjamtn/JavaScriptAvanzado/main/data/noticias.json', {
+    mode: 'cors'
+})
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al cargar las noticias');
