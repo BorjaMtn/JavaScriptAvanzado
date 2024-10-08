@@ -1,4 +1,6 @@
-fetch('https://borjamtn.github.io/JavaScriptAvanzado/data/testimonios.json')
+fetch('../data/testimonios.json', {
+    mode: 'cors'
+})
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al cargar los testimonios');
