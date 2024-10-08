@@ -1,6 +1,5 @@
-fetch('../data/noticias.json', {
-    mode: 'cors'
-})
+fetch('https://borjamtn.github.io/JavaScriptAvanzado/data/noticias.json?t=' + new Date().getTime())
+
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al cargar las noticias');
