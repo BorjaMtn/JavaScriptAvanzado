@@ -1,4 +1,4 @@
-fetch('https://borjamtn.github.io/JavaScriptAvanzado/data/testimonios.json?t=' + new Date().getTime())
+fetch('https://raw.githubusercontent.com/borjamtn/JavaScriptAvanzado/main/data/testimonios.json')
 
     .then(response => {
         if (!response.ok) {
