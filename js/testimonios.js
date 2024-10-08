@@ -1,4 +1,4 @@
-fetch('../data/testimonios.json', {
+fetch('./data/testimonios.json', {
     mode: 'cors'
 })
     .then(response => {
