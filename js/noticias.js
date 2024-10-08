@@ -1,3 +1,4 @@
+// He tenido que poner esa ruta porque me estaban dando muchos errores para cargar los json
 fetch('https://raw.githubusercontent.com/borjamtn/JavaScriptAvanzado/main/data/noticias.json', {
     mode: 'cors'
 })

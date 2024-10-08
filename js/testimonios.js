@@ -1,6 +1,7 @@
+// He tenido que poner esa ruta porque me estaban dando muchos errores para cargar los json
 fetch('https://raw.githubusercontent.com/borjamtn/JavaScriptAvanzado/main/data/testimonios.json', {
     mode: 'cors'
-})
+}) 
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al cargar los testimonios');
