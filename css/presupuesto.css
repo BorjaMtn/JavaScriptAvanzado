@@ -9,13 +9,14 @@ body {
     background-color: #f4f4f4; 
 }
 
+/* Estilos para pantallas grandes (manteniendo tu diseño original) */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #0056b3; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    background-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
@@ -23,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px; 
+    padding: 15px 30px;
 }
 
 .logo a {
@@ -53,14 +54,56 @@ header {
 }
 
 .navbar a:hover {
-    background-color: #004494; 
-    transform: translateY(-2px); 
+    background-color: #004494;
+    transform: translateY(-2px);
 }
 
 .navbar a.active {
-    background-color: #003366; 
-    font-weight: bold; 
+    background-color: #003366;
+    font-weight: bold;
 }
+
+/* Estilos para pantallas pequeñas (responsivo) */
+.toggle-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0056b3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 15px 0;
+    }
+
+    .toggle-menu {
+        display: flex;
+    }
+}
+
 
 /* Para evitar que el contenido quede oculto detrás de la barra de navegación */
 main {

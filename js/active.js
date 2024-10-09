@@ -14,3 +14,10 @@
          link.classList.add('active');
      }
  });
+
+//  Para el menu hamburguesa
+ document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.toggle-menu').addEventListener('click', function() {
+        document.querySelector('.menu').classList.toggle('active');
+    });
+});

@@ -1,28 +1,32 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JavaScript</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptAvanzado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
-  <body>
-
+</head>
+<body>
     <header>
       <nav class="navbar">
           <div class="logo">
               <a href="./" class="logo">JavaScriptAvanzado</a>
           </div>
-          <ul>
+          <ul class="menu">
             <li><a href="./" class="active">Inicio</a></li>
             <li><a href="./vistas/presupuesto.html">Presupuesto</a></li>
             <li><a href="./vistas/galeria.html">Galería</a></li>
             <li><a href="./vistas/contacto.html">Contacto</a></li>
-          </ul>          
+          </ul>
+          <div class="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>          
       </nav>
-  </header>
+    </header>
 
   <main class="container-fluid">
     <div class="container text-center">
@@ -31,7 +35,7 @@
                 <section id="seccion1" class="card p-3">
                     <h2>Sección de Innovación</h2>
                     <p>Exploramos nuevas ideas y conceptos cada día. Creemos en la innovación constante como motor de crecimiento.</p>
-                    <img src="https://picsum.photos/300/200?random=1" alt="Innovación" class="img-fluid rounded mb-2">
+                    <img src="https://picsum.photos/300/200?random=1" alt="Innovación" class="img-fluid rounded mb-2" width="400" height="300">
                     <p>Desde tecnología hasta diseño, nuestra meta es desafiar lo convencional y proponer soluciones creativas.</p>
                 </section>
             </div>
@@ -44,7 +48,7 @@
                         <li>🏆 Reconocimiento de logros</li>
                         <li>💼 Oportunidades de crecimiento personal</li>
                     </ul>
-                    <img src="https://picsum.photos/300/200?random=2" alt="Cultura Empresarial" class="img-fluid rounded">
+                    <img src="https://picsum.photos/300/200?random=2" alt="Cultura Empresarial" class="img-fluid rounded" width="400" height="300">
                 </section>
             </div>
             <div class="col mb-4">
@@ -72,10 +76,10 @@
             <div class="row">
                 <div class="col-md-4 text-center mb-3">
                     <h5>Síguenos en</h5>
-                    <a href="#" class="text-light mx-2"><i class="fab fa-facebook-f fa-2x"></i></a>
-                    <a href="#" class="text-light mx-2"><i class="fab fa-twitter fa-2x"></i></a>
-                    <a href="#" class="text-light mx-2"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="#" class="text-light mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.facebook.com/" class="text-light mx-2"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="https://x.com/?lang=es" class="text-light mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.instagram.com" class="text-light mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/" class="text-light mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
                 </div>
                 <div class="col-md-4 text-center mb-3">
                     <h5>Dirección</h5>
@@ -99,8 +103,6 @@
       <script src="js/noticias.js"></script>
       <script src="js/testimonios.js"></script>
       <script src="js/active.js"></script>
-     
-      
-
+    
 </body>
 </html>
